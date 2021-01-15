@@ -1,6 +1,7 @@
 export type RootStackParamList = {
   Root: undefined;
   NotFound: undefined;
+  NewTweet: undefined;
 };
 
 export type BottomTabParamList = {
@@ -30,7 +31,7 @@ export type TweetType = {
   user: UserType;
   createdAt: string;
   content: string;
-  image: string;
+  image: string | null;
   comments: number;
   likes: number;
   retweets: number;

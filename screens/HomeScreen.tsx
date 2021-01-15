@@ -1,15 +1,15 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
+import Feed from "../components/Feed/Feed";
+import NewTweetButton from "../components/NewTweetButton";
 
 import { View } from "../components/Themed";
-
-import Tweet from "../components/Tweet";
-import Tweets from "../Data/Tweets";
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Tweet tweet={Tweets[0]} />
+      <Feed />
+      <NewTweetButton />
     </View>
   );
 }

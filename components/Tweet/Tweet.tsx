@@ -11,13 +11,21 @@ interface TweetProps {
 
 const Tweet = ({ tweet }: TweetProps) => {
   return (
-    <View>
+    <View style={styles.container}>
       <LeftContainer user={tweet.user} />
       <MainContainer tweet={tweet} />
     </View>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: "row",
+    width: "100%",
+    padding: 10,
+    borderBottomWidth: 0.5,
+    borderColor: "#DFDFDF",
+  },
+});
 
 export default Tweet;
